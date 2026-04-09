@@ -1,0 +1,295 @@
+:root{
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --very-dark-blue: hsl(220, 13%, 13%);
+    --dark-grayish-blue: hsl(219, 9%, 45%);
+    --grayish-blue: hsl(220, 14%, 75%);
+    --light-grayish-blue: hsl(223, 64%, 98%);
+    --line: hsl(225, 36%, 96%);
+    --white: hsl(0, 0%, 100%);
+    /*--black (with 75% opacity for lightbox background): hsl(0, 0%, 0%);*/
+    --black: rgba(0,0,0,0.5);
+
+    --fonte-principal: "Kumbh Sans", sans-serif;
+}
+
+@media(min-width:768px){
+    header{
+        margin-bottom: 3.125rem;
+    }
+    
+    main{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .produto_imagem{
+      height: 70vw;
+    }
+}
+
+@media (min-width:1200px){
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 4.375rem;
+    }
+    
+    header, main{
+        width: 80%;
+    }
+    
+    header {
+        padding: 2.5rem 0;
+        justify-content: flex-start;
+        gap: 3.125rem;
+        border-bottom: solid 1px var(--line);
+        margin-bottom: 0; 
+    }
+
+    #header_aside_logo_container{
+        width: fit-content;
+    }
+
+    #header_aside_img{
+        display: none;
+    }
+
+    #header_logo{
+      width: 11.25rem;
+      height: 1.625rem;
+    }
+
+    #navegacao_links_container{
+        background-color: none;
+        width: fit-content;
+        height: fit-content;
+        position: static;
+        z-index: 0;
+        
+        display: block;
+    }
+
+    #navegacao_links{
+        position: static;
+        background-color: none;
+        width: fit-content;
+        height: fit-content ;
+        z-index: 0;
+        
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2.188rem;
+        padding: 0;
+    }
+
+    
+    #navegacao_links_fechar_img{
+        display: none;
+    }
+
+    .navegacao_link{
+        color: var(--dark-grayish-blue);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .navegacao_link::after{
+        content: "";
+        top: 10px;
+        width: 100%;
+        background-color: orange;
+        border-bottom: 1px solid orange;
+    }
+
+    #header_opcoes{
+        position: absolute;
+        right: 0;
+    }
+
+    #header_opcoes_cart_container{
+        position: relative;
+        
+    }
+    
+    #header_opcoes_cart_container, #header_opcoes_item_cart_img{
+        width: 1.625rem;
+        height: 1.625rem;
+    }
+
+    #header_opcoes_item_cart_img{
+        cursor: pointer;
+    }
+
+    #cart_modal_container{
+        top: 170%;
+        left: auto;
+        right: -600%;
+        /*left: -20vw;
+        right: auto;*/
+        min-width:350px ;
+        width: 20vw;
+        min-height: 32vh;
+        /*box-shadow: 3px 3px 20px rgba(0,0,0,0.1), -3px 0 20px rgba(0,0,0,0.1);*/
+        box-shadow:5px 5px 20px rgba(0,0,0,0.1), -5px 0 20px rgba(0,0,0,0.1);
+        padding-bottom: 0.625rem;
+        border-radius: 0.938rem;
+        
+    }
+
+   #header_opcoes_item_avatar_img{
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 0 3.75rem;
+    }
+
+    .produto_imagens{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1.563rem;
+    }
+
+    .produto_imagem{
+        border-radius: 0.938rem;
+        width: 100%;
+        height: 40vh;
+        cursor: pointer;
+    }
+
+    .produto_imagens_miniaturas{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .produto_imagem_miniatura{
+        width: 80px;
+        height: 80px;
+        border-radius: 0.938rem;
+        cursor: pointer;
+    }
+
+    #produto_imagens_botoes{
+        display: none;
+    }
+
+    #produto_informacoes{
+        width: 100%;
+    }
+
+    #produto_informacoes_titulo{
+        gap: 1.25rem;
+        margin-bottom: 2.188rem;
+    }
+    #produto_informacoes_titulo_marca{
+        font-size: 1rem;
+    }
+    #produto_informacoes_titulo_nome{
+        font-size: 2.625rem;
+        width: 100%;
+    }
+
+    #produto_informacoes_descricao{
+        font-size: 1.125rem;
+        margin-bottom: 0.938rem;
+    }
+
+    #produto_informacoes_valores{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 0.938rem;
+    }
+
+    #valor_atual{
+        font-size: 2rem;
+    }
+
+    #valor_desconto{
+        font-size: 1.125rem;
+    }
+
+    #valor_antigo{
+        font-size: 1.125rem;
+    }
+
+    #produto_informacoes_adicionar{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #produto_informacoes_adicionar_quantidade{
+        width: 30%;
+    }
+
+    #produto_informacoes_adicionar_btn{
+        width: 70%;
+        
+    }
+
+    #lightbox{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1000;
+        background-color: var(--black);
+        display: none;
+    }
+    
+    .lightbox_active{
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    #lightbox_fechar_img{
+        position: absolute;
+        width: 1.4rem;
+        height: 1.4rem;
+        right: 0;
+        top: -2.5rem;
+        cursor: pointer;
+    }
+
+    .produto_imagens_lightbox{
+        width: 30%;
+    }
+
+    #produto_imagens_botoes_lightbox{
+        position: absolute;
+        align-self: center;
+        width: 112%;
+        top: 40%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.938rem;
+    }
+
+
+    .produto_imagens_seta_lightbox{
+        scale: 1.5;
+        cursor: pointer;
+    }
+   
+}

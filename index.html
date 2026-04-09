@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>E-Comerce</title>
+</head>
+<body>
+    <header>
+        <div id="header_aside_logo_container">
+            <img id="header_aside_img" src="assets/icon-menu.svg" alt="Icone de menu lateral">
+            <img id="header_logo" src="assets/logo.svg" alt="Logomarca sneakers">
+        </div>
+        <nav id="navegacao_links_container">
+            <div id="navegacao_links">
+                <img id="navegacao_links_fechar_img" src="assets/icon-close-nav.svg" alt="Ícone de fechar menu">
+                <a class="navegacao_link" href="#">Collections</a>
+                <a class="navegacao_link" href="#">Men</a>
+                <a class="navegacao_link" href="#">Women</a>
+                <a class="navegacao_link" href="#">About</a>
+                <a class="navegacao_link" href="#">Contact</a>
+            </div>
+        </nav>
+        <div id="header_opcoes">
+            <div id="header_opcoes_cart_container">
+                <img id="header_opcoes_item_cart_img" class="header_opcoes_item" src="assets/icon-cart.svg" alt="Icone de carrinho de compras">
+                <dialog id="cart_modal_container" class="cart_fechado">
+                    <div id="cart_titulo_container">
+                        <h3 id="cart_titulo">Cart</h3>
+                    </div>
+                    <hr id="cart_linha">
+                    <div id="cart_itens">
+                        <p id="cart_mensagem_vazio">You're cart is empty.</p>
+                        <!--<div id="cart_itens_lista_container">
+                            <ul id="cart_itens_lista">
+                                <li class="cart_itens_lista_item">
+                                    <img class="cart_itens_lista_item_img" src="assets/image-product-1-thumbnail.jpg" alt="">
+                                    <div class="cart_itens_lista_item_text">
+                                        <p class="cart_itens_lista_item_text_nome">Fall limited Edition Sneakers</p>
+                                        <div class="cart_itens_lista_item_text_valor">
+                                            <p class="cart_itens_lista_item_text_valor_parcelado">$125.00 x 3</p>
+                                            <p class="cart_itens_lista_item_text_valor_total">$375.00</p>
+                                        </div>
+                                    </div>
+                                    <img class="cart_itens_lista_item_deletar" src="assets/icon-delete.svg" alt="">
+                                </li>
+                            </ul> 
+                            <button id="cart_itens_lista_btn">Checkout</button>
+                        </div>-->
+                        
+                    </div>          
+                </dialog>
+            </div>
+            
+            <img id="header_opcoes_item_avatar_img" class="header_opcoes_item" src="assets/image-avatar.png" alt="Imagem de perfil do usuário">
+        </div>
+    </header>
+    <main>
+        <section class="produto_imagens">
+            <img class="produto_imagem" id="imagem_maior" src="assets/image-product-1.jpg" alt="">
+            <div class="produto_imagens_miniaturas">
+                <img class="produto_imagem_miniatura" src="assets/image-product-1-thumbnail.jpg" alt="">
+                <img class="produto_imagem_miniatura" src="assets/image-product-2-thumbnail.jpg" alt="">
+                <img class="produto_imagem_miniatura" src="assets/image-product-3-thumbnail.jpg" alt="">
+                <img class="produto_imagem_miniatura" src="assets/image-product-4-thumbnail.jpg" alt="">
+            </div>
+            <div id="produto_imagens_botoes">
+                <img class="produto_imagens_seta"  src="assets/icon-previous.svg" alt="">
+                <img class="produto_imagens_seta"  src="assets/icon-next.svg" alt="">
+            </div>
+        </section>
+        <section id="produto_informacoes">
+            <div id="produto_informacoes_titulo">
+                <p id="produto_informacoes_titulo_marca">SNEAKER COMPANY</p>
+                <h2 id="produto_informacoes_titulo_nome">Fall Limited Edition Sneakers</h2>
+            </div>
+            <p id="produto_informacoes_descricao">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div id="produto_informacoes_valores">
+                <div id="valor">
+                    <p id="valor_atual">$125.00</p>
+                    <p id="valor_desconto">50%</p>
+                </div>
+                <p id="valor_antigo">$250.00</p>
+            </div>
+            <div id="produto_informacoes_adicionar">
+                <div id="produto_informacoes_adicionar_quantidade">
+                    <img id="quantidade_menos_img" src="assets/icon-minus.svg" alt="">
+                    <p id="quantidade">0</p>
+                    <img id="quantidade_mais_img" src="assets/icon-plus.svg" alt="">
+                </div>
+                <button id="produto_informacoes_adicionar_btn">
+                    <img id="adicionar_btn_icone" src="assets/icon-cart.svg" alt="">
+                    <p id="adicionar_btn_text">Add to cart</p>
+                </button>
+            </div>    
+        </section>
+        <!--<dialog id="cart_modal_container">
+            <div id="cart_titulo_container">
+                <h3 id="cart_titulo">Cart</h3>
+            </div>
+            <hr id="cart_linha">
+            <div id="cart_itens">
+                <p id="cart_mensagem_vazio">You're cart is empty.</p>
+                <div id="cart_itens_lista_container">
+                    <ul id="cart_itens_lista">
+                        <li class="cart_itens_lista_item">
+                            <img class="cart_itens_lista_item_img" src="assets/image-product-1-thumbnail.jpg" alt="">
+                            <div class="cart_itens_lista_item_text">
+                                <p class="cart_itens_lista_item_text_nome">Fall limited Edition Sneakers</p>
+                                <div class="cart_itens_lista_item_text_valor">
+                                    <p class="cart_itens_lista_item_text_valor_parcelado">$125.00 x 3</p>
+                                    <p class="cart_itens_lista_item_text_valor_total">$375.00</p>
+                                </div>
+                            </div>
+                            <img class="cart_itens_lista_item_deletar" src="assets/icon-delete.svg" alt="">
+                        </li>
+                    </ul> 
+                    <button id="cart_itens_lista_btn">Checkout</button>
+                </div>
+                
+            </div>          
+        </dialog>-->
+    </main>
+    <section id="lightbox">
+        <section class="produto_imagens produto_imagens_lightbox">
+            <img id="lightbox_fechar_img" src="assets/icon-close-lightbox.svg" alt="Ícone de fechar o lightbox">
+            <img id="imagem_maior_lightbox" class="produto_imagem" alt="">
+            <div class="produto_imagens_miniaturas">
+                <img class="produto_imagem_miniatura" src="assets/image-product-1-thumbnail.jpg" alt="">
+                <img class="produto_imagem_miniatura" src="assets/image-product-2-thumbnail.jpg" alt="">
+                <img class="produto_imagem_miniatura" src="assets/image-product-3-thumbnail.jpg" alt="">
+                <img class="produto_imagem_miniatura" src="assets/image-product-4-thumbnail.jpg" alt="">
+            </div>
+            <div id="produto_imagens_botoes_lightbox">
+                <img class="produto_imagens_seta produto_imagens_seta_lightbox" src="assets/icon-previous.svg" alt="">
+                <img class="produto_imagens_seta produto_imagens_seta_lightbox" src="assets/icon-next.svg" alt="">
+                
+            </div>
+        </section>
+    </section>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>
