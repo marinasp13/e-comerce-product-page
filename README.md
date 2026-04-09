@@ -9,9 +9,9 @@ Página de um e-comerce com fotos e informações sobre um produto.
 <div align="center">
   <img src="./preview.png" alt="Preview do Projeto" width="100%">
   
-  [Acesse o Projeto Online](URL_DO_GITHUB_PAGES)</br>
-  [Acesse o Repositório do Projeto](URL_DO_REPOSITORIO)</br>
-  [Reportar Bug](URL_DO_REPOSITORIO/issues)</br>
+  [Acesse o Projeto Online](https://marinasp13.github.io/e-comerce-product-page/)</br>
+  [Acesse o Repositório do Projeto](https://github.com/marinasp13/e-comerce-product-page)</br>
+  [Reportar Bug](https://github.com/marinasp13/e-comerce-product-page/issues)</br>
   
 </div>
 
@@ -53,16 +53,16 @@ Caso queira rodar este projeto localmente na sua máquina, siga os passos abaixo
 
 ```bash
 # 1. Clone este repositório
-$ git clone https://github.com/seu-usuario/nome-do-projeto.git
+$ git clone https://github.com/marinasp13/e-comerce-product-page.git
 
 # 2. Acesse a pasta do projeto
-$ cd nome-do-projeto
+$ cd e-comerce-product-page
 
 # 3. Instale as dependências (se houver)
 $ npm install
 
 # 4. Execute a aplicação
-$ npm run dev (ou abra o index.html no navegador)
+# abra o index.html no navegador
 ```
 
 ---
